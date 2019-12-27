@@ -7,7 +7,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-d", "--dirname", default='test', help="lock your dirname")
 parser.add_argument("-i", "--ignore",default=[],help="ignore files for compile", nargs='+')
 parser.add_argument("-f", "--ignore_folder",default=[],help="ignore folders for compile", nargs='+')
-parser.add_argument("-v", "--py_version",default=3.6,help="python version")
+parser.add_argument("-v", "--py_version",default=3 ,help="python version")
 args = parser.parse_args()
 # 在加密过程中 build文件夹将被锁住无法复制 因此只能够加密完成后再复制其他文件
 
